@@ -1,0 +1,17 @@
+<Alloy>
+	<Window id="index" >
+	<ActionBar id="actionbar" />
+		<!-- android menu -->
+		<Menu platform="android">
+			<MenuItem title = "Settings" onClick = "clickedSettings" />
+			<MenuItem title = "About" onClick = "clickedAbout"  />
+		</Menu>
+
+		<!-- rightNavButton for platforms that support them -->
+		<RightNavButton platform="ios">
+			<Button id="settingsButton" onClick="clickedSettings" 
+				systemButton="Titanium.UI.iPhone.SystemButton.COMPOSE" />
+		</RightNavButton>
+		
+	</Window>
+</Alloy>
